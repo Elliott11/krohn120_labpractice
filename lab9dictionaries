@@ -1,0 +1,28 @@
+####Warm-up
+##names = ['joe','tom','barb','sure','sally']
+##scores = [10,23,13,18,12]
+##
+##def makeDictionary(list1,list2):
+##    scoreDict = {}
+##    list2count = 0
+##    for i in list1:
+##        scoreDict[i]= list2[list2count]
+##        list2count+=1
+##    return scoreDict
+##scoreDict = makeDictionary(names,scores)
+##
+##def getScore(name,dictionary):
+##    try:
+##        return dictionary[name]
+##    except:
+##        return -1
+
+##dictionaryM = {'A': '. _', 'N': '_ .', 'B':' _ . . .', 'O':' ​_ _ _', 'C':' _ . _ .', 'P': '. _ _ . ','D': '_ . . ','Q': '_ _ . _ ','E': '.', 'R': '. _ . ','F': '. .  _ .', 'S': '. . . ','G': '_ _ .', 'T': '_', 'H': '. . . . ','U': '. . _ ','I': '. .', 'V': '. . . _ ','J': '. _ _ _ ','W': '. _ _ ','K': '_ . _ ','X': '_ . . _ ','L': '. _ . . ','Y': '_ . _ _ ','M': '_ _ ','Z': '_ _ . .'}
+##def translate(stringS):
+##    stringS = stringS.upper()
+##    for i in stringS:
+##        if i == ' ' or i =='?' or i =='!' or i == '.':
+##            print('\n','\n')
+##        else:
+##            print(dictionaryM[i],'\n')
+
