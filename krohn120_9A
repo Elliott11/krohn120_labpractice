@@ -1,2 +1,21 @@
-New HW
-This is a new file.
+class Adventurer(object):
+    def __init__(self, name = '', level=0, strength=0, speed=0, power=0):
+        self.name = name
+        self.level = level
+        self.strength = strength
+        self.speed = speed
+        self.power = power
+        self.HP = level * 6
+        self.hidden = False
+    def __repr__(self):
+       return (str(self.name)+ "- HP:" + str(self.HP))
+    def attack(self,target):
+        if target.hidden == True:
+            print( self.name, "can't see", target.name)
+        else:
+            damage = target.HP = (self.strength + 4)
+            target.HP = damage
+            print( self.name, "attacks", target.name, "for", damage, "damage")
+
+thog = Adventurer("Thog",3,5,1,2)
+repr(thog)
